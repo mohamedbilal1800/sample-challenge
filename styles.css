@@ -14,6 +14,15 @@ body{
 
 button{
     font-family: inherit;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+}
+
+button:hover{
+    cursor: pointer;
+    border: 2px solid rgb(158, 158, 158);
 }
 
 h1{
@@ -23,14 +32,14 @@ h1{
 /* Hero styles */
 #hero{
     height: 100vh;
-    border: 2px solid red;
     background-image: url(./images/bg-hero-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 nav{
-    border: 2px solid blue;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,34 +48,173 @@ nav{
 
 nav button{
     padding: 0.5rem 2rem;
-    border-radius: 20px;
-    outline: none;
-    border: 2px solid transparent;
-    font-weight: bold;
 }
 
-nav button:hover{
-    cursor: pointer;
-    border: 2px solid rgb(158, 158, 158);
-}
 
 #hero > div{
-    border: 2px solid green;
-    display:flex;
-    height:100%;
+    display: flex;
     align-items: center;
-
+    height: 100%;
 }
 
 #hero > div img{
     height: 90%;
-    width: 90%;
-}
-#hero > div div{
-    border: 2px solid brown;
+    width: 90%;   
 }
 
-#hero{
-    height: 90%;
-    width: 90;
+.heroContent{
+    flex: 4;
+    padding: 2rem;
+}
+
+.heroContent h1{
+    font-size: 2.8rem;
+}
+
+.heroImageContainer{
+    flex: 6;
+    display: flex;
+    justify-content: center;
+}   
+
+.heroContent button{
+    padding: 0.8rem 3rem;
+    border-radius: 30px;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+}
+
+.heroContent button:hover{
+    border-color: transparent;
+}
+
+.heroContent p{
+    margin-bottom: 2rem;
+}
+
+/* Info section styles */
+#info{
+    padding: 4rem;
+    width: 90%;
+    margin: 0 auto; 
+    padding-bottom: 6rem;
+}
+
+#info > div{
+    margin: 2rem 0;
+    display: flex;
+    border: 2px solid rgb(225, 224, 224);
+    border-radius: 10px;
+    padding-left: 4rem;
+    padding-right: 2rem;
+}
+
+#info img{
+    height:70%;
+    width: 50%;
+}
+
+.infoContent{
+    align-self: center;
+    flex: 4;
+}
+
+.infoImageContainer{
+    flex: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoImageContainer:nth-of-type(1){
+    justify-content: flex-start;
+}
+
+
+/* Absolute Section Styles */
+#absoluteSection{
+    position: relative;
+}
+
+#absoluteSection div{
+    border: 2px solid rgb(225, 224, 224);
+    background-color: white;
+    text-align: center;
+    padding: 2rem 3rem;
+    width: 40%;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#absoluteSection button{
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+}
+
+/* Footer Styles */
+footer{
+    background-color: hsl(192, 100%, 9%);
+    padding: 8rem 2rem 2rem 2rem;
+}
+
+#moreDetailsContainer{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+#moreDetailsContainer > div{
+    flex-basis: 20%;
+}
+
+#contactContainer div{
+    display: flex;
+    margin: 10px 0;
+    column-gap: 20px;
+    align-items: flex-start;
+}
+
+.linksContainer{
+    display: flex;
+    align-items: center;
+}
+
+.linksContainer ul{
+    list-style: none;
+}
+
+.linksContainer li{
+    display: block;
+    margin: 1rem 0;
+}
+
+#socialsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+#copyrightText{
+    color: white;
+    margin: 0;
+    text-align: right;
+    margin-top: 1rem;
+}
+
+.footerIcon{
+    padding: 7px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.footerIcon img{
+    height: 16px;
+    width: 20px;
 }
