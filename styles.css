@@ -1,0 +1,72 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button{
+    font-family: inherit;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero styles */
+#hero{
+    height: 100vh;
+    border: 2px solid red;
+    background-image: url(./images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    border: 2px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav button{
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+}
+
+nav button:hover{
+    cursor: pointer;
+    border: 2px solid rgb(158, 158, 158);
+}
+
+#hero > div{
+    border: 2px solid green;
+    display:flex;
+    height:100%;
+    align-items: center;
+
+}
+
+#hero > div img{
+    height: 90%;
+    width: 90%;
+}
+#hero > div div{
+    border: 2px solid brown;
+}
+
+#hero{
+    height: 90%;
+    width: 90;
+}
